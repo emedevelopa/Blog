@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog</title>
+</head>
+<body>
+<header class="header">
+    <nav class="nav__bar">
+        <div class="nav__logo">BG</div>
+        <button class="nav__menu">
+            <box-icon name='menu' flip='horizontal' color='#e9eadd' class="hamburgerIcon"></box-icon>
+            <box-icon name='x' flip='horizontal' color='#e9eadd' class="closeIcon"></box-icon>
+        </button>
+        <div class="nav__hamburger">
+            <ul class="nav__links">
+                <li class="nav__item"><a href="#" class="nav__link">Sobre mi</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+            </ul>
+            <ul class="nav__socials">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <box-icon name='facebook' type='logo' color='#e9eadd' ></box-icon>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <box-icon name='twitter' type='logo' color='#e9eadd' ></box-icon>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <box-icon name='instagram' type='logo' color='#e9eadd' ></box-icon>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__toggle">
+                <box-icon name='toggle-right' type='solid' color='#e9eadd' ></box-icon>
+                </box-icon>
+            </div>
+        </div>
+    </nav> 
+    <hr class="separator"></hr>
+</header>
+
+<main class="main">
+    <div class="main__container">
+        <h1 class="main__title">BLOG</h1>
+        <div class="main__filters">
+            <button class="main__chip">Arte</button>
+            <button class="main__chip">Música</button>
+            <button class="main__chip">Libros</button>
+            <button class="main__chip">Salud</button>
+            <button class="main__chip">Naturaleza</button>
+            <button class="main__chip">Belleza</button>
+            <button class="main__chip">Gaming</button>
+            <button class="main__chip">Tecnología</button>
+        </div>
+
+        <section class="cards__container">
+            <article class="card__article">
+                <div class="card__info">
+                    <time datetime="2023-03-23" class="card__time">23/03/23</time>
+                    <span class="card__category">Arte</span>
+                </div>
+                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <div class="card__text">
+                    <h2 class="card__title">Title</h2>
+                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
+                    <a href="" class="card__link">Leer más</a>
+                </div>
+            </article>
+            <article class="card__article">
+                <div class="card__info">
+                    <time datetime="2023-03-23">23/03/23</time>
+                    <span class="card__category">Arte</span>
+                </div>
+                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <div class="card__text">
+                    <h2 class="card__title">Title</h2>
+                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
+                    <a href="" class="card__link">Leer más</a>
+                </div>
+            </article>
+            <article class="card__article">
+                <div class="card__info">
+                    <time datetime="2023-03-23">23/03/23</time>
+                    <span class="card__category">Arte</span>
+                </div>
+                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <div class="card__text">
+                    <h2 class="card__title">Title</h2>
+                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
+                    <a href="" class="card__link">Leer más</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+</main>
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
