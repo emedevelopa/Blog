@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root{
-    --font: "inter", sans-serif;
-    --fontTitle:"Atkinson-hyperlegible", sans-serif;
+    --font: "Inter", sans-serif;
+    --fontTitle:"Atkinson Hyperlegible", sans-serif;
     --title: 6rem;
     --titleMobile: 3rem;
     --paragraph: 1.25rem;
     --paragraphMobile: 1rem;
-    -small: 0.8rem;
+    --small: 0.8rem;
 
     --dark:#232323;
     --light:#E9EADD;
@@ -60,7 +62,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .nav__logo{
@@ -108,7 +110,7 @@ body{
     gap: 16px; /* Espaciado entre los chips */
     overflow-x: auto; /* Permite deslizar horizontalmente */
     white-space: nowrap; /* Evita que los botones se partan en varias líneas */
-    padding: 8px 0; /* Un poco de espacio arriba y abajo */
+    padding: 16px 0; /* Un poco de espacio arriba y abajo */
     scrollbar-width: none;
 
 }
@@ -132,6 +134,7 @@ body{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    margin-top:1rem;
 
 
 }
@@ -139,7 +142,6 @@ body{
 .cards__container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
     padding: .7rem;
 
 }
@@ -178,4 +180,123 @@ body{
     padding: .7rem 0;
 }
 
+.card__title{
+    
+}
 
+.card__paragraph{
+    line-height: 1.5;
+    font-size: var(--paragraphMobile);
+    margin: .6rem 0;
+}
+
+.card__link{
+    display: inline-flex;
+    align-items: center;
+    color:var(--light);
+
+}
+
+.link__arrow{
+    margin-left: .5rem;
+    opacity: 0; 
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.card__link:hover .link__arrow{
+    opacity: 1; 
+    transform: translateX(0);
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.pagination__arrow{
+    width: 4rem;
+    height: 4rem;
+}
+
+.prev, .next{
+    background-color: transparent;
+    border:none;
+}
+
+.footer{
+    padding: 1rem 0;
+
+}
+
+.subscribe__container,
+.categories__container,
+.socials__container{
+    margin:1rem 0;
+}
+
+.subscribe__form{
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+
+.subscribe__input{
+    height: 2rem;
+    width: 250px;
+    background-color: var(--medium);
+    border:none;
+    padding: 0 .5rem;;
+}
+
+.subscribe__input::placeholder{
+    color: var(--light);
+}
+
+.subscribe__btn{
+    background-color: transparent;
+    border: none;
+
+}
+
+.subscribe__arrow{
+    width: 2rem;
+    height: 2rem;
+}
+
+.subscribe__title,
+.categories__title,
+.socials__title{
+    margin:.5rem 0;
+}
+
+.categories__content{
+    display: flex;
+    
+}
+
+.categories__column{
+    flex: 1;
+    margin-bottom: 1rem 0;
+}
+
+.categories__item,
+.socials__item{
+    list-style:none;
+    padding: .2rem 0;
+}
+
+.categories__link,
+.socials__link{
+    text-decoration: none;
+    color: var(--light);
+
+}
+
+.socials__list{
+    display: flex;
+    gap: 1rem;
+}
