@@ -8,137 +8,147 @@
 </head>
 <body>
 <header class="header">
-    <nav class="nav__bar">
-        <div class="nav__logo">BG</div>
-        <button class="nav__menu">
+    <nav class="nav__bar" aria-label="Main navigation">
+        <div class="nav__logo">
+            <a href="/index.html" aria-label = "Blog">
+                <box-icon name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
+            </a>
+        </div>
+        <button class="nav__btn" aria-label = "Abrir menú de navegación" aria-expanded = "false" aria-controls="menu">
             <box-icon name='menu' flip='horizontal' color='#e9eadd' class="hamburgerIcon"></box-icon>
             <box-icon name='x' flip='horizontal' color='#e9eadd' class="closeIcon"></box-icon>
         </button>
-        <div class="nav__hamburger">
+        <div id="menu" class="nav__hamburger">
             <ul class="nav__links">
                 <li class="nav__item"><a href="#" class="nav__link">Sobre mi</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
             </ul>
             <ul class="nav__socials">
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <box-icon name='facebook' type='logo' color='#e9eadd' ></box-icon>
+                    <a href="#" class="nav__link" aria-label="Ir a Facebook">
+                        <box-icon name='facebook' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <box-icon name='twitter' type='logo' color='#e9eadd' ></box-icon>
+                    <a href="#" class="nav__link" aria-label="Ir a Twitter">
+                        <box-icon name='twitter' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <box-icon name='instagram' type='logo' color='#e9eadd' ></box-icon>
+                    <a href="#" class="nav__link" aria-label="Ir a Instagram">
+                        <box-icon name='instagram' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
                     </a>
                 </li>
             </ul>
-            <div class="nav__toggle">
-                <box-icon name='toggle-right' type='solid' color='#e9eadd' ></box-icon>
+            <button class="nav__toggle" aria-label="Cambiar modo de color" aria-pressed="false">
+                <box-icon name='toggle-right' type='solid' color='#e9eadd' aria-hidden="true"></box-icon>
                 </box-icon>
-            </div>
+            </button>
         </div>
     </nav> 
-    <hr class="separator"></hr>
+    <hr class="separator" aria-hidden="true"></hr>
 </header>
 
 <main class="main">
     <div class="main__container">
         <h1 class="main__title">BLOG</h1>
         <div class="main__filters">
-            <button class="main__chip">Arte</button>
-            <button class="main__chip">Música</button>
-            <button class="main__chip">Libros</button>
-            <button class="main__chip">Salud</button>
-            <button class="main__chip">Naturaleza</button>
-            <button class="main__chip">Belleza</button>
-            <button class="main__chip">Gaming</button>
-            <button class="main__chip">Tecnología</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre arte">Arte</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre música">Música</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre libros">Libros</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre salud">Salud</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre naturaleza">Naturaleza</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre belleza">Belleza</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre gaming">Gaming</button>
+            <button class="main__chip" aria-pressed="false" aria-label="Ver artículos sobre tecnología">Tecnología</button>
         </div>
 
-        <section class="cards__container">
+        <section class="cards__container" aria-label="Entradas del blog">
             <article class="card__article">
                 <div class="card__info">
-                    <time datetime="2023-03-23" class="card__time">23/03/23</time>
+                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
                 <img src="Assets/img.jpg" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link">Leer más
+                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
                         <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
                     </a>
                 </div>
             </article>
             <article class="card__article">
                 <div class="card__info">
-                    <time datetime="2023-03-23">23/03/23</time>
+                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
                 <img src="Assets/img.jpg" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link">Leer más
+                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
                         <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
                     </a>
                 </div>
             </article>
             <article class="card__article">
                 <div class="card__info">
-                    <time datetime="2023-03-23">23/03/23</time>
+                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
                 <img src="Assets/img.jpg" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link">Leer más
+                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte" >Leer más
                         <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
                     </a>
                 </div>
             </article>
         </section>
-        <nav class="pagination">
-            <button class="prev"><box-icon name='chevron-left' type='solid' color='#e9eadd' class="pagination__arrow"></box-icon></button>
-            <button class="next"><box-icon type='solid' name='chevron-right' color='#e9eadd'class="pagination__arrow"></box-icon></button>
+        <nav class="pagination" aria-label="Paginación">
+            <button class="prev"><box-icon name='chevron-left' type='solid' color='#e9eadd' class="pagination__arrow" aria-label ="Atrás"></box-icon></button>
+            <button class="next"><box-icon type='solid' name='chevron-right' color='#e9eadd'class="pagination__arrow" aria-label ="Siguiente"></box-icon></button>
         </nav>
         <hr class="separator"></hr>
     </div>
 </main>
 
 <footer class="footer">
-    <div class="nav__logo">BG</div>
+    <div class="nav__logo" aria-hidden="true">
+        <a href="/index.html" aria-label = "Blog">
+            <box-icon name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
+        </a>
+    </div>
     <div class="subscribe__container">
         <h3 class="subscribe__title">Suscribete</h3>
         <p class="subscribe__paragraph">Recibe las últimas noticias en tu correo</p>
         <form action="" class="subscribe__form">
-            <input type="email" class="subscribe__input" placeholder="Introduce tu email">
-            <button class="subscribe__btn">
-                <box-icon name='right-arrow-alt' color='#e9eadd' class="subscribe__arrow"></box-icon>
+            <label for="email" class="hiddenLabel">Introduce tu correo electrónico</label>
+            <input id ="email" type="email" class="subscribe__input" placeholder="Introduce tu email">
+            <button class="subscribe__btn" aria-label="Enviar formulario">
+                <box-icon name='right-arrow-alt' color='#e9eadd' class="subscribe__arrow" aria-hidden="true"></box-icon>
             </button>
+        </form>
     </div>
     <div class="categories__container">
         <h3 class="categories__title">Categorías</h3>
         <div class="categories__content">
             <div class="categories__column">
                 <ul class="categories__list">
-                    <li class="categories__item"><a href="#" class="categories__link">Arte</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Música</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Libros</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Salud</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre arte">Arte</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre música">Música</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link"aria-label="Ver artículos sobre libros">Libros</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre salud">Salud</a></li>
                 </ul>
             </div>
             <div class="categories__column">
                 <ul class="categories__list">
-                    <li class="categories__item"><a href="#" class="categories__link">Naturaleza</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Belleza</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Gaming</a></li>
-                    <li class="categories__item"><a href="#" class="categories__link">Tecnología</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre naturaleza">Naturaleza</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre belleza">Belleza</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre gaming">Gaming</a></li>
+                    <li class="categories__item"><a href="#" class="categories__link" aria-label="Ver artículos sobre tecnología">Tecnología</a></li>
                 </ul>
             </div>
         </div>
@@ -148,26 +158,32 @@
         <h3 class="socials__title">Redes Sociales</h3>
         <ul class="socials__list">
             <li class="socials__item">
-                <a href="#" class="socials__link">
-                    <box-icon name='facebook' type='logo' color='#e9eadd' ></box-icon>
+                <a href="#" class="socials__link" aria-label="Ir a Facebook">
+                    <box-icon name='facebook' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
                 </a>
             </li>
             <li class="socials__item">
-                <a href="#" class="socials__link">
-                    <box-icon name='twitter' type='logo' color='#e9eadd' ></box-icon>
+                <a href="#" class="socials__link" aria-label="Ir a Twitter">
+                    <box-icon name='twitter' type='logo' color='#e9eadd' aria-hiddne="true"></box-icon>
                 </a>
             </li>
             <li class="socials__item">
-                <a href="#" class="socials__link">
-                    <box-icon name='instagram' type='logo' color='#e9eadd' ></box-icon>
+                <a href="#" class="socials__link" aria-label="Ir a Instagram">
+                    <box-icon name='instagram' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
                 </a>
             </li>
         </ul>
+    </div>
+
+    <hr class="separator"></hr>
+    <div class="madewith" aria-hidden="true">
+        <span class="madewith__text">Hecho por emedevelopa y con el <box-icon name='heart' type='solid' color='#e9eadd'></box-icon> </span>
+    </div>
 
 </footer>
 
 
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
