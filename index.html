@@ -11,19 +11,25 @@
     <nav class="nav__bar" aria-label="Main navigation">
         <div class="nav__logo">
             <a href="/index.html" aria-label = "Blog">
-                <box-icon name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
+                <box-icon  class="nav__icon" name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
             </a>
         </div>
-
-        <form class="nav__search">
-            <div class="search__container">
-                <label for="inputSearch" class="hiddenLabel">Buscar</label>
-                <input type="text" class="search__input" id="inputSearch">
-                <button class="search__btn" aria-label="Buscar">
-                    <box-icon name='search' color='#e9eadd' class="search__icon"></box-icon>
-                </button>
-            </div>
-        </form>
+        <div class="nav__controls">
+            <form class="nav__search">
+                <div class="search__container">
+                    <label for="inputSearch" class="hiddenLabel">Buscar</label>
+                    <input type="text" class="search__input" id="inputSearch">
+                    <button class="search__btn" aria-label="Buscar">
+                        <box-icon name='search' color='#e9eadd' class="search__icon"></box-icon>
+                    </button>
+                </div>
+            </form>
+            <button class="toggle__btn">
+                <box-icon class="nav__toogle" name='toggle-left' type='solid' color='#e9eadd' ></box-icon>
+            </button>
+            
+        </div>
+        
     </nav> 
     <hr class="separator" aria-hidden="true"></hr>
 </header>
@@ -48,7 +54,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -62,7 +68,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -76,7 +82,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -90,7 +96,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -104,7 +110,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -118,7 +124,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -132,7 +138,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -146,7 +152,7 @@
                     <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
                     <span class="card__category">Arte</span>
                 </div>
-                <img src="Assets/img.jpg" alt="img" class="card__img">
+                <img src="Assets/img2.png" alt="img" class="card__img">
                 <div class="card__text">
                     <h2 class="card__title">Title</h2>
                     <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
@@ -167,7 +173,7 @@
 <footer class="footer">
     <div class="nav__logo" aria-hidden="true">
         <a href="/index.html" aria-label = "Blog">
-            <box-icon name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
+            <box-icon class="nav__icon" name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
         </a>
     </div>
     <div class="footer__container">
@@ -229,7 +235,7 @@
 
     <hr class="separator"></hr>
     <div class="madewith" aria-hidden="true">
-        <span class="madewith__text">Hecho por emedevelopa y con el <box-icon name='heart' type='solid' color='#e9eadd' class="madewith__icon"></box-icon> </span>
+        <span class="madewith__text">Hecho por emedevelop con el <box-icon name='heart' type='solid' color='#e9eadd' class="madewith__icon"></box-icon> </span>
     </div>
 
 </footer>
