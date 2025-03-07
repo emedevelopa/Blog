@@ -1,0 +1,19 @@
+@use "../base/variables" as v;
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.pagination__arrow{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.prev, .next{
+    background-color: transparent;
+    border:none;
+}

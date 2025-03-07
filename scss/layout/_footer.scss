@@ -1,0 +1,120 @@
+@use "../base/variables" as v;
+
+.footer{
+    padding:2rem;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.hiddenLabel{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.subscribe__container,
+.categories__container,
+.socials__container{
+    margin:1rem 0;
+}
+
+.subscribe__form{
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+
+.subscribe__input{
+    height: 2rem;
+    width: 250px;
+    background-color: v.$medium;
+    border:none;
+    padding: 0 .5rem;;
+}
+
+.subscribe__input::placeholder{
+    color: v.$light;
+}
+
+.subscribe__input:focus {
+    outline: none;
+    color: v.$light;
+}
+
+
+.subscribe__btn{
+    background-color: transparent;
+    border: none;
+
+}
+
+.subscribe__arrow{
+    width: 2rem;
+    height: 2rem;
+}
+
+.subscribe__title,
+.categories__title,
+.socials__title{
+    margin:.5rem 0;
+}
+
+.categories__content{
+    display: flex;
+    gap: 4rem;
+    
+}
+
+.categories__column{
+    margin-bottom: 1rem 0;
+}
+
+.categories__item,
+.socials__item{
+    list-style:none;
+    padding: .2rem 0;
+}
+
+.categories__link,
+.socials__link{
+    text-decoration: none;
+    color: v.$light;
+}
+
+.categories__link:hover{
+    text-decoration: underline;
+}
+
+.socials__list{
+    display: flex;
+    gap: 1rem;
+}
+
+.madewith{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.madewith__text{
+    display:flex;
+    align-items: center;
+    font-size: .8rem;
+    opacity:.6;
+    gap:.3rem;
+}
+
+.madewith__icon{
+    width: 15px;
+}

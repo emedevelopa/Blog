@@ -1,5 +1,6 @@
 @use "../base/variables" as v;
 
+
 .header{
     display: flex;
     flex-direction:column;
@@ -27,6 +28,27 @@
     font-family: v.$fontTitle;  
 }
 
+.nav__icon{
+    width: 40px;
+    height: 40px;
+}
+
+.nav__controls{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__toogle{
+    width: 40px;
+    height: 40px;
+}
+
+.toggle__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .nav__search{
     display:flex;
     justify-content: flex-end;
@@ -37,13 +59,12 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: width 0.4s ease-in-out;
     border-radius: .5rem;
     background-color: v.$dark;
     border:1px solid v.$light;
-
 }
 
 .search__input{
@@ -65,9 +86,8 @@
 
 .nav__search:hover .search__container,
 .nav__search:focus-within .search__container {
-    width: 350px; /* Tamaño expandido */
+    width: 350px;
 }
-
 
 .nav__search:hover .search__input,
 .nav__search:focus-within .search__input {
@@ -81,8 +101,8 @@
     right: 0;
     background-color: transparent;
     border: none;
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
     cursor:pointer;
     display: flex;
     align-items: center;
@@ -114,16 +134,4 @@
     height: 1px;
     width: 100%;
     background-color: v.$light;
-}
-
-.hiddenLabel{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    white-space: nowrap;
 }

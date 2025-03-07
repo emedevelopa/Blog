@@ -1,0 +1,65 @@
+@use "../base/variables" as v;
+
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: .7rem;
+}
+
+.card__article{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid v.$light;
+
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 0;
+}
+
+.card__category{
+    border: 1px solid v.$light;
+    padding: .4rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+}
+
+.card__time{
+    font-size: .9rem;
+}
+
+.card__img{
+    width: 100%;
+}
+
+.card__text{
+    padding: .7rem 0;
+} 
+.card__paragraph{
+    line-height: 1.5;
+    font-size: v.$paragraphMobile;
+    margin: .5rem 0 1.4rem;
+}
+
+.card__link{
+    display: inline-flex;
+    align-items: center;
+    color:v.$light;
+
+}
+
+.link__arrow{
+    margin-left: .5rem;
+    opacity: 0; 
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.card__link:hover .link__arrow{
+    opacity: 1; 
+    transform: translateX(0);
+}

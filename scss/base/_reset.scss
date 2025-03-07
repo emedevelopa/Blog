@@ -1,5 +1,14 @@
+@use "../base/variables" as v;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: v.$dark;
+    color: v.$light;
+    width: 100%;
+    font-family: v.$font;
 }

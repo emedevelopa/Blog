@@ -1,34 +1,40 @@
-@use"variables";
+@use "../base/variables" as v;
 
 .main__filters{
     display: flex;
-    gap: 16px; /* Espaciado entre los chips */
-    overflow-x: auto; /* Permite deslizar horizontalmente */
-    white-space: nowrap; /* Evita que los botones se partan en varias líneas */
-    padding: 16px 0; /* Un poco de espacio arriba y abajo */
+    gap: 16px; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 16px 0; 
     scrollbar-width: none;
-
 }
 
 .main__chip{
-    font-family: var(--font);
+    font-family: v.$font;
     padding: .4rem;
     border-radius: .5rem;
     background-color: transparent;
     border: none;
-    border:1px solid var(--light);
-    color: var(--light);
+    border:1px solid v.$light;
+    color: v.$light;
     cursor: pointer;
     white-space: nowrap;
     font-size: .9rem;
 }
 
 .main__chip:hover{
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: v.$light;
+    color: v.$dark;
 }
 
 .main__chip:focus, .main__chip[aria-pressed="true"]{
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: v.$light;
+    color: v.$dark;
+}
+
+@media (min-width: 768px){
+    .main__filters{
+        justify-content: center;
+    }
+    
 }

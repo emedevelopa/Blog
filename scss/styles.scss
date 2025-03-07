@@ -1,7 +1,9 @@
 @use "base/variables";
 @use "base/reset";
-@use "layout/nav";
 @use "layout/main";
 @use "layout/footer";
+@use "components/nav";
 @use "components/buttons";
 @use "components/cards";
+@use "components/chips";
+@use "components/pagination";
