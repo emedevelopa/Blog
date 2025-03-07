@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
     --font: "Inter", sans-serif;
@@ -30,7 +30,7 @@ body{
 
 /*Header*/
 
-.header{
+/*.header{
     display: flex;
     flex-direction:column;
     position:fixed;
@@ -99,7 +99,7 @@ body{
 }
 
 
-.nav__search:hover .search__input,
+/*.nav__search:hover .search__input,
 .nav__search:focus-within .search__input {
     width: 100%;
     opacity: 1;
@@ -148,7 +148,7 @@ body{
 
 /*Main*/
 
-
+/*
 .main{
     padding:5.6rem 2rem 0;
 }
@@ -161,10 +161,10 @@ body{
 
 .main__filters{
     display: flex;
-    gap: 16px; /* Espaciado entre los chips */
-    overflow-x: auto; /* Permite deslizar horizontalmente */
-    white-space: nowrap; /* Evita que los botones se partan en varias líneas */
-    padding: 16px 0; /* Un poco de espacio arriba y abajo */
+    gap: 16px; /* Espaciado entre los chips *//*
+    overflow-x: auto; /* Permite deslizar horizontalmente *//*
+    white-space: nowrap; /* Evita que los botones se partan en varias líneas *//*
+    padding: 16px 0; /* Un poco de espacio arriba y abajo *//*
     scrollbar-width: none;
 
 }
@@ -194,7 +194,7 @@ body{
 
 /*Article*/
 
-.main__container{
+/*.main__container{
     display:flex;
     justify-content: center;
     flex-direction: column;
