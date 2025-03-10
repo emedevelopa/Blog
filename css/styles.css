@@ -1,3 +1,5 @@
+/*Mobile*/
+/*Desktop*/
 * {
   margin: 0;
   padding: 0;
@@ -12,29 +14,107 @@ body {
 }
 
 .main {
-  padding: 5.6rem 2rem 0;
+  padding: 5.6rem 0 0;
+  margin: 0 4rem;
 }
-
 .main__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
 }
-
 .main__title {
   font-size: 7rem;
   text-align: center;
   font-family: var(--fontTitle);
+}
+.main .post__title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.main .post__subtitle {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+.main .post__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0.7rem;
+}
+.main .post__container {
+  display: flex;
+  gap: 1rem;
+}
+.main .post__regular {
+  opacity: 0.7;
+}
+.main .post__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .post__chip {
+  display: flex;
+  margin-left: auto;
+}
+.main .post__share {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+.main .share__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main .share__icon {
+  width: 30px;
+  height: 30px;
+}
+.main .text__category {
+  background-color: #E9EADD;
+  color: #232323;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.main .post__content {
+  margin: 1rem 0;
+}
+.main .paragraph {
+  line-height: 1.5;
+}
+.main .paragraph__xxl {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.main .separator {
+  margin: 2rem 0;
+}
+.main .latest__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.main .cards__latest {
+  margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   .main__title {
     font-size: 12rem;
   }
+  .post__text .post__title {
+    font-size: 4rem;
+  }
+  .post__header .post__info {
+    flex-direction: row;
+  }
 }
 .footer {
-  padding: 2rem;
+  padding: 2rem 0;
+  margin: 0 4rem;
 }
 
 .footer__container {
@@ -284,8 +364,7 @@ body {
 
 .cards__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  padding: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .card__article {
@@ -398,6 +477,19 @@ body {
 .prev, .next {
   background-color: transparent;
   border: none;
+}
+
+.post__category {
+  font-family: "Inter", sans-serif;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: #E9EADD;
+  border: none;
+  color: #232323;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

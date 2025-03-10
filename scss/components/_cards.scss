@@ -2,8 +2,7 @@
 
 .cards__container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    padding: .7rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .card__article{

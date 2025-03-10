@@ -1,0 +1,14 @@
+@use "../base/variables" as v;
+
+.post__category{
+    font-family: v.$font;
+    padding: .4rem;
+    border-radius: .5rem;
+    background-color:v.$light;
+    border: none;
+    color: v.$dark;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: .9rem;
+    margin-right: auto;
+}
