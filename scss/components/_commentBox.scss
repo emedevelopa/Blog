@@ -1,0 +1,54 @@
+@use "../base/variables" as v;
+
+
+.comment__box{
+    min-height: 100px;
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    padding: .5rem;
+    font-family: v.$font;
+}
+
+.textarea__container{
+    width: 100%;
+    background-color:#cbcbcb;
+    border:none;
+    padding: .7rem;
+}
+
+.comment__box:focus{
+    border:none;
+    outline: none;
+}
+
+.btn__container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: transparent;
+    border:none;
+}
+
+.comment__btn{
+    padding: 5px 12px;
+    background-color: v.$dark;
+    border:none;
+    border-radius: .5rem;
+    color:v.$light;
+    cursor: pointer;
+}
+
+body.lightMode .comment__btn{
+    background-color: v.$light;
+    color:v.$dark
+}
+
+@media (min-width:768px) {
+    .comments{
+        max-width: 600px;
+        margin:0 auto
+    }
+
+   
+}

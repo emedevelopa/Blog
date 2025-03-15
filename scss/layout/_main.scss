@@ -3,7 +3,7 @@
 
 .main {
     padding: 5.6rem 0 0;
-    margin:0 4rem;
+    margin:0 2rem;
 
     &__container {
         display: flex;
@@ -61,15 +61,12 @@
         justify-content: flex-end;
     }
 
-    .share__btn{
-        background-color: transparent;
-        border: none;
-        cursor:pointer;
+    .share__icon{
+        fill:v.$light;
     }
 
-    .share__icon{
-        width: 30px;
-        height: 30px;
+    body.lightMode .share__icon{
+        fill:v.$dark;
     }
 
     .text__category{
@@ -78,14 +75,20 @@
         padding: .4rem;
         border:none;
         border-radius: .5rem;
+    }
 
+    body.lightMode .text__category{
+        background-color: v.$dark;
+        color: v.$light;
     }
 
     .post__content{
-        margin: 1rem 0;
+        max-width: 800px;
+        margin: 3rem auto;
     }
 
-    .paragraph{
+    .paragraph,
+    .paragraph2{
         line-height: 1.5;
     }
 
@@ -96,6 +99,7 @@
     }
     .separator{
         margin: 2rem 0;
+        opacity: .3;
     }
 
     .latest__title{
@@ -113,7 +117,12 @@
 
 
 
+
 @media (min-width: 768px){
+
+    .main{
+        margin:0 4rem;
+    }
     .main__title{
         font-size: 12rem;
     }    
@@ -124,5 +133,19 @@
         flex-direction: row;
     }
 }
+
+@media (min-width:1440px) {
+    .main{
+        margin:0 auto;
+        max-width:70rem;
+    }
+}
     
+@media (min-width:2560px) {
+    .main{
+        margin:0 auto;
+        max-width: 95rem;
+    }
+}
+
 

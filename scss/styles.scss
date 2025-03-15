@@ -3,8 +3,9 @@
 @use "layout/main";
 @use "layout/footer";
 @use "components/nav";
-@use "components/buttons";
 @use "components/cards";
 @use "components/chips";
 @use "components/pagination";
-@use "components/_chipCategory"
+@use "components/_chipCategory";
+@use "components/commentBox";
+@use "components/_cardUser";

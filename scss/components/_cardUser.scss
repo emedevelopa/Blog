@@ -1,0 +1,103 @@
+@use "../base/variables" as v;
+
+.comments{
+    margin-top:4rem;
+    margin-bottom: 4rem;
+}
+
+.comments__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+
+}
+
+.commentbox__title{
+    margin-bottom:1rem;
+}
+
+.comment__card{
+    border:1px solid v.$light;
+    padding: 5px 12px;
+}
+
+body.lightMode .comment__card{
+    border:1px solid v.$dark;
+}
+
+.user__pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+body.lightMode .user__pic{
+    fill:v.$dark;
+}
+
+.user__container{
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user__name{
+    margin: 1rem 0 .5rem;
+}
+
+.user__date{
+    opacity: .7;
+}
+.user__text{
+    line-height: 1.5;
+}
+
+.user__comment{
+    margin:1rem 0 0;
+}
+
+.comment__icons{
+    margin-top: 2rem;
+}
+
+.reply__btn{
+    fill:v.$light;
+}
+
+body.lightMode .comment__btn{
+    fill: v.$dark;
+}
+
+.like__btn{
+    fill:v.$light;
+    background-color: transparent;
+    border: none;
+    padding: 5px 12px;
+}
+
+body.lightMode .like__btn{
+    fill:v.$dark;
+}
+
+.share__btn{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.share__icon{
+    width: 30px;
+    height: 30px;
+}
+
+.separator__comment{
+    opacity: .5;
+}
+

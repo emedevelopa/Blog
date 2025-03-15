@@ -9,11 +9,12 @@
     left: 0;
     right: 0;
     background-color: v.$dark;
+    z-index:1000;
+}
+body.lightMode .header{
+    background-color: v.$light;
 }
 
-.header{
-    display: flex;
-}
 
 .nav__bar{
     display: flex;
@@ -25,113 +26,69 @@
 
 .nav__logo{
     font-size:2rem ;
-    font-family: v.$fontTitle;  
+    font-family: v.$fontTitle; 
+    
 }
 
 .nav__icon{
     width: 40px;
     height: 40px;
+    fill:v.$light;
 }
 
-.nav__controls{
-    display: flex;
-    gap: 1rem;
+body.lightMode .nav__icon{
+    fill:v.$dark;
 }
 
 .nav__toogle{
     width: 40px;
     height: 40px;
+    color:v.$light;
+}
+body.lightMode .nav__toggle{
+    color:v.$dark;
 }
 
 .toggle__btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.nav__search{
-    display:flex;
-    justify-content: flex-end;
+body.lightMode .search__icon{
+    fill:v.$dark;
 }
 
-.search__container{
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
-    transition: width 0.4s ease-in-out;
-    border-radius: .5rem;
-    background-color: v.$dark;
-    border:1px solid v.$light;
-}
-
-.search__input{
-    color:v.$light;
-    font-size: 1rem;
-    flex-grow:1;
+.toggle__right,
+.toggle__left{
     position: absolute;
-    right: 40px;
-    opacity: 0;
-    border:1px solid transparent;
-    border-radius:.5rem;
-    background-color: transparent;
-    outline:none;
-    width: 0px;
-    height: 100%;
-    padding: 0 10px;
-    transition: width 0.4s ease-in-out, opacity 0.2s ease-in-out;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.nav__search:hover .search__container,
-.nav__search:focus-within .search__container {
-    width: 350px;
-}
-
-.nav__search:hover .search__input,
-.nav__search:focus-within .search__input {
-    width: 100%;
-    opacity: 1;
-    right: 0;
-}
-
-.search__btn{
-    position: absolute;
-    right: 0;
-    background-color: transparent;
-    border: none;
-    width:40px;
-    height: 40px;
-    cursor:pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search__icon{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-}
-
-
-.nav__item{
-    list-style: none;
-}
-
-.nav__link{
-    color:v.$light;
-    text-decoration: none;
-}
 
 .nav__toggle{
     background-color: transparent;
     border: none;
+    fill:v.$light;
 }
 
-.separator{
+body.lightMode .nav__toggle{
+    fill:v.$dark;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.separator-main{
     height: 1px;
     width: 100%;
     background-color: v.$light;
 }
+

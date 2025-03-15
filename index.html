@@ -11,25 +11,14 @@
     <nav class="nav__bar" aria-label="Main navigation">
         <div class="nav__logo">
             <a href="/index.html" aria-label = "Blog">
-                <box-icon  class="nav__icon" name='cube' type='solid' color='#e9eadd' aria-hidden = "true"></box-icon>
+                <svg class="nav__icon" aria-hidden = "true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c-4.963 0-9 4.038-9 9v8h.051c.245 1.691 1.69 3 3.449 3 1.174 0 2.074-.417 2.672-1.174a3.99 3.99 0 0 0 5.668-.014c.601.762 1.504 1.188 2.66 1.188 1.93 0 3.5-1.57 3.5-3.5V11c0-4.962-4.037-9-9-9zm7 16.5c0 .827-.673 1.5-1.5 1.5-.449 0-1.5 0-1.5-2v-1h-2v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1H8v1c0 1.845-.774 2-1.5 2-.827 0-1.5-.673-1.5-1.5V11c0-3.86 3.141-7 7-7s7 3.14 7 7v7.5z"></path><circle cx="9" cy="10" r="2"></circle><circle cx="15" cy="10" r="2"></circle></svg>
             </a>
         </div>
-        <div class="nav__controls">
-            <form class="nav__search">
-                <div class="search__container">
-                    <label for="inputSearch" class="hiddenLabel">Buscar</label>
-                    <input type="text" class="search__input" id="inputSearch">
-                    <button class="search__btn" aria-label="Buscar">
-                        <box-icon name='search' color='#e9eadd' class="search__icon"></box-icon>
-                    </button>
-                </div>
-            </form>
-            <button class="toggle__btn">
-                <box-icon class="nav__toogle" name='toggle-left' type='solid' color='#e9eadd' ></box-icon>
-            </button>
-            
-        </div>
         
+            <button class="toggle__btn" aria-label="Cambiar modo de color">
+                <svg class="nav__toggle toggle__right" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M16 9c-1.628 0-3 1.372-3 3s1.372 3 3 3 3-1.372 3-3-1.372-3-3-3z"></path><path d="M16 6H8c-3.296 0-5.982 2.682-6 5.986v.042A6.01 6.01 0 0 0 8 18h8c3.309 0 6-2.691 6-6s-2.691-6-6-6zm0 10H8a4.006 4.006 0 0 1-4-3.99C4.004 9.799 5.798 8 8 8h8c2.206 0 4 1.794 4 4s-1.794 4-4 4z"></path></svg>
+                <svg class="nav__toggle toggle__left hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M8 9c-1.628 0-3 1.372-3 3s1.372 3 3 3 3-1.372 3-3-1.372-3-3-3z"></path><path d="M16 6H8c-3.3 0-5.989 2.689-6 6v.016A6.01 6.01 0 0 0 8 18h8a6.01 6.01 0 0 0 6-5.994V12c-.009-3.309-2.699-6-6-6zm0 10H8a4.006 4.006 0 0 1-4-3.99C4.004 9.799 5.798 8 8 8h8c2.202 0 3.996 1.799 4 4.006A4.007 4.007 0 0 1 16 16zm4-3.984.443-.004.557.004h-1z"></path></svg>
+            </button>
     </nav> 
     <hr class="separator" aria-hidden="true"></hr>
 </header>
@@ -49,68 +38,13 @@
         </div>
 
         <section class="cards__container" aria-label="Entradas del blog">
-            <article class="card__article">
-                <div class="card__info">
-                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
-                    <span class="card__category">Arte</span>
-                </div>
-                <img src="Assets/img2.png" alt="img" class="card__img">
-                <div class="card__text">
-                    <h2 class="card__title">Title</h2>
-                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
-                        <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
-                    </a>
-                </div>
-            </article>
-            <article class="card__article">
-                <div class="card__info">
-                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
-                    <span class="card__category">Arte</span>
-                </div>
-                <img src="Assets/img2.png" alt="img" class="card__img">
-                <div class="card__text">
-                    <h2 class="card__title">Title</h2>
-                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
-                        <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
-                    </a>
-                </div>
-            </article>
-            <article class="card__article">
-                <div class="card__info">
-                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
-                    <span class="card__category">Arte</span>
-                </div>
-                <img src="Assets/img2.png" alt="img" class="card__img">
-                <div class="card__text">
-                    <h2 class="card__title">Title</h2>
-                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
-                        <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
-                    </a>
-                </div>
-            </article>
-            <article class="card__article">
-                <div class="card__info">
-                    <time datetime="2023-03-23" class="card__time" aria-label="Publicado el 23 de marzo de 2023">23/03/23</time>
-                    <span class="card__category">Arte</span>
-                </div>
-                <img src="Assets/img2.png" alt="img" class="card__img">
-                <div class="card__text">
-                    <h2 class="card__title">Title</h2>
-                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore aliquam hic eveniet molestiae laboriosam dolore harum similique assumenda et, autem quisquam repellat accusamus possimus explicabo architecto. Ad, doloribus nam!</p>
-                    <a href="" class="card__link" aria-label="Leer más sobre el artículo de Arte">Leer más
-                        <box-icon name='right-arrow-alt' color='#e9eadd' class="link__arrow"></box-icon>
-                    </a>
-                </div>
-            </article>
+            
         </section>
         <nav class="pagination" aria-label="Paginación">
-            <button class="prev"><box-icon name='chevron-left' type='solid' color='#e9eadd' class="pagination__arrow" aria-label ="Atrás"></box-icon></button>
-            <button class="next"><box-icon type='solid' name='chevron-right' color='#e9eadd'class="pagination__arrow" aria-label ="Siguiente"></box-icon></button>
+            <button class="prev"><svg class="pagination__arrow" aria-label ="Atrás" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></button>
+            <button class="next"><svg class="pagination__arrow" aria-label="Siguiente" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></button>
         </nav>
-        <hr class="separator"></hr>
+        <hr class="separator-main"></hr>
     </div>
 </main>
 
@@ -128,7 +62,7 @@
                 <label for="email" class="hiddenLabel">Introduce tu correo electrónico</label>
                 <input id ="email" type="email" class="subscribe__input" placeholder="Introduce tu email" required>
                 <button class="subscribe__btn" aria-label="Enviar formulario">
-                    <box-icon name='right-arrow-alt' color='#e9eadd' class="subscribe__arrow" aria-hidden="true"></box-icon>
+                    <svg class="subscribe__arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
                 </button>
             </form>
         </div>
@@ -159,17 +93,17 @@
             <ul class="socials__list">
                 <li class="socials__item">
                     <a href="#" class="socials__link" aria-label="Ir a Facebook">
-                        <box-icon name='facebook' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
+                        <svg class="social__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
                     </a>
                 </li>
                 <li class="socials__item">
                     <a href="#" class="socials__link" aria-label="Ir a Twitter">
-                        <box-icon name='twitter' type='logo' color='#e9eadd' aria-hiddne="true"></box-icon>
+                        <svg class="social__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
                     </a>
                 </li>
                 <li class="socials__item">
                     <a href="#" class="socials__link" aria-label="Ir a Instagram">
-                        <box-icon name='instagram' type='logo' color='#e9eadd' aria-hidden="true"></box-icon>
+                        <svg class="social__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
                     </a>
                 </li>
             </ul>
@@ -185,7 +119,7 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script src="scriptIndex.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

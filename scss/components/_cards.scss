@@ -10,7 +10,10 @@
     flex-direction: column;
     padding: 1rem;
     border: 1px solid v.$light;
+}
 
+body.lightMode .card__article{
+    border: 1px solid v.$dark;
 }
 
 .card__info{
@@ -26,6 +29,11 @@
     border-radius: .5rem;
     font-size: .9rem;
 }
+
+body.lightMode .card__category{
+    border: 1px solid v.$dark;
+}
+
 
 .card__time{
     font-size: .9rem;
@@ -48,14 +56,21 @@
     display: inline-flex;
     align-items: center;
     color:v.$light;
-
+}
+body.lightMode .card__link{
+    color:v.$dark;
 }
 
 .link__arrow{
+    fill:v.$light;
     margin-left: .5rem;
     opacity: 0; 
     transform: translateX(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+body.lightMode .link__arrow{
+    fill:v.$dark;
 }
 
 .card__link:hover .link__arrow{

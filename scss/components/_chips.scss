@@ -22,14 +22,28 @@
     font-size: .9rem;
 }
 
+body.lightMode .main__chip{
+    border:1px solid v.$dark;
+    color:v.$dark;
+}
+
 .main__chip:hover{
     background-color: v.$light;
     color: v.$dark;
+}
+body.lightMode .main__chip:hover{
+    background-color: v.$dark;
+    color: v.$light;
 }
 
 .main__chip:focus, .main__chip[aria-pressed="true"]{
     background-color: v.$light;
     color: v.$dark;
+}
+
+body.lightMode .main__chip:focus, .main__chip[aria-pressed="true"]{
+    background-color: v.$dark;
+    color: v.$light;
 }
 
 @media (min-width: 768px){
