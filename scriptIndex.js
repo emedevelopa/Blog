@@ -97,7 +97,7 @@ const posts = [
         resume: "Los años 60 fueron clave para el cambio en la música, trayendo consigo el poder del rock y su capacidad para transformar la cultura.",
         content: "La década de 1960 fue testigo de una revolución musical sin precedentes. Con el surgimiento de bandas como The Beatles, The Rolling Stones, y Jimi Hendrix, el rock pasó de ser un género marginal a convertirse en un fenómeno global que transformó por completo la cultura musical. Los años 60 fueron una época de agitación social y política, y la música fue el reflejo perfecto de ese cambio. El rock and roll de los primeros años 50 había sentado las bases, pero fue en los 60 cuando este género experimentó una transformación radical. The Beatles, por ejemplo, no solo cambiaron el estilo musical, sino también la forma en que se veía a los músicos. Su capacidad para innovar, experimentar y fusionar diferentes estilos les permitió no solo marcar la década, sino también influir en generaciones de músicos. Con álbumes como Sgt. Pepper's Lonely Hearts Club Band, la banda británica trajo una nueva forma de experimentar la música, llevando la producción a nuevas alturas y desafiando las convenciones del rock clásico. Jimi Hendrix, por su parte, revolucionó la guitarra eléctrica, utilizando efectos y técnicas que no solo marcaron una época, sino que todavía influyen en la música moderna. Su estilo innovador y su actitud desafiantes fueron emblemáticos de una generación que estaba cambiando el mundo. El rock de los años 60 no solo cambió la música, sino que también reflejó los cambios sociales que estaban ocurriendo en ese momento. La música se convirtió en un vehículo de expresión para las preocupaciones y aspiraciones de la juventud. Movimientos como el amor libre, los derechos civiles y la paz encontraron su eco en las letras de canciones que hablaron de revolución, libertad y justicia. Con su influencia en la cultura juvenil y su capacidad para conectar con un público global, el rock de los años 60 sigue siendo considerado como uno de los movimientos más importantes en la historia de la música popular.",
         textbold: "\"La música como forma de protesta\"",
-        contentsec: "Aunque el rock de los años 60 se diversificó y evolucionó en diferentes subgéneros, su influencia sigue viva hoy en la música moderna. Bandas como Nirvana, U2, y Radiohead siguen llevando el legado del rock clásico, pero con un enfoque contemporáneo. Así, el impacto de la década de 1960 sigue siendo palpable en todos los géneros musicales que han surgido desde entonces. El rock no solo cambió la música, sino también la forma en que las personas piensan sobre la cultura, la política y la identidad."
+        content2: "Aunque el rock de los años 60 se diversificó y evolucionó en diferentes subgéneros, su influencia sigue viva hoy en la música moderna. Bandas como Nirvana, U2, y Radiohead siguen llevando el legado del rock clásico, pero con un enfoque contemporáneo. Así, el impacto de la década de 1960 sigue siendo palpable en todos los géneros musicales que han surgido desde entonces. El rock no solo cambió la música, sino también la forma en que las personas piensan sobre la cultura, la política y la identidad."
       },
 
       {
@@ -313,99 +313,95 @@ const posts = [
     ];
 
     
+// Variables globales
+let currentPage = 1
+const postsPerPage = 6;
+const totalPages = Math.ceil(posts.length / postsPerPage); 
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-function createCardPost () {
 
-    let currentPage = 1
-    const postsPerPage = 4
-    const totalPages = Math.ceil(posts.length / postsPerPage); 
-
+function createCardPost() {
+    // Calcular el índice de inicio y fin para la página actual
     const startIndex = (currentPage - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
     const postsToDisplay = posts.slice(startIndex, endIndex);
-    
 
-    const prevBtn = document.querySelector(".prev-button");
-    const nextBtn = document.querySelector(".next-button");
+    // Limpiar el contenedor antes de añadir nuevos posts
+    cardContainer.innerHTML = "";
 
-    cardContainer.innerHTML = ""
-
+    // Renderizar las cards
     postsToDisplay.forEach(post => {
+        const cardArticle = document.createElement("article");
+        cardArticle.classList.add("card__article");
 
-        const cardArticle = document.createElement("article")
-        cardArticle.classList.add("card__article")
+        const cardInfo = document.createElement("div");
+        cardInfo.classList.add("card__info");
 
-        const cardInfo = document.createElement("div")
-        cardInfo.classList.add("card__info")
+        const timeCard = document.createElement("time");
+        timeCard.classList.add("card__time");
+        timeCard.textContent = post.date;
 
-        const timeCard = document.createElement("time")
-        timeCard.classList.add("card__time")
-        timeCard.textContent = post.date
-        const categoryCard = document.createElement("span")
-        categoryCard.classList.add("card__category")
-        categoryCard.textContent = post.category
+        const categoryCard = document.createElement("span");
+        categoryCard.classList.add("card__category");
+        categoryCard.textContent = post.category;
 
-        cardInfo.appendChild(timeCard)
-        cardInfo.appendChild(categoryCard)
-        cardArticle.appendChild(cardInfo)
+        cardInfo.appendChild(timeCard);
+        cardInfo.appendChild(categoryCard);
+        cardArticle.appendChild(cardInfo);
 
-        cardContainer.appendChild(cardArticle)
+        const imgCard = document.createElement("img");
+        imgCard.classList.add("card__img");
+        imgCard.src = post.img;
+        cardArticle.appendChild(imgCard);
 
-        const imgCard = document.createElement("img")
-        imgCard.classList.add("card__img")
-        imgCard.src = post.img
-        cardArticle.appendChild(imgCard)
+        const cardText = document.createElement("div");
+        cardText.classList.add("card__text");
 
-        const cardText = document.createElement("div")
-        cardText.classList.add("card__text")
+        const cardTitle = document.createElement("h2");
+        cardTitle.classList.add("card__title");
+        cardTitle.textContent = post.title;
 
-        const cardTitle = document.createElement("h2")
-        cardTitle.classList.add("card__title")
-        cardTitle.textContent = post.title
+        const cardParagraph = document.createElement("p");
+        cardParagraph.classList.add("card__paragraph");
+        cardParagraph.textContent = post.resume;
 
-        const cardParagraph = document.createElement("p")
-        cardParagraph.classList.add("card__paragraph")
-        cardParagraph.textContent = post.resume
+        const cardLink = document.createElement("a");
+        cardLink.classList.add("card__link");
+        cardLink.innerHTML = 'Leer más <svg class="link__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>';
+        cardLink.href = `blog.html?id=${post.id}`;
 
-        const cardLink = document.createElement("a")
-        cardLink.classList.add("card__link")
-        cardLink.innerHTML = 'Leer más <svg class="link__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>'
-        cardLink.href= `blog.html?id=${post.id}`
+        cardText.appendChild(cardTitle);
+        cardText.appendChild(cardParagraph);
+        cardText.appendChild(cardLink);
+        cardArticle.appendChild(cardText);
 
-        cardText.appendChild(cardTitle)
-        cardText.appendChild(cardParagraph)
-        cardText.appendChild(cardLink)
-        cardArticle.appendChild(cardText)
+        cardContainer.appendChild(cardArticle);
+    });
 
-        cardContainer.appendChild(cardArticle)
-    })
-
-    function updatePaginationBtn () {
-        if(currentPage === 1) {
-            prevBtn.disabled = true
-        } else {
-            prevBtn.disabled = false
-        }
-    
-        if (currentPage === totalPages) {
-            nextBtn.disabled = true
-        } else {
-            nextBtn.disabled = false
-        }
-    }
-
-    prevBtn.addEventListener("click", () => {
-        if (currentPage > 1) {
-            currentPage--
-        }
-    })
-
-    nextBtn.addEventListener("click", () => {
-        if (currentPage < totalPages) {
-            currentPage++
-        }
-    })
+    // Actualizar botones de paginación
+    updatePaginationBtn();
 }
-createCardPost()
 
+function updatePaginationBtn() {
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+}
 
+// Event Listeners (Solo se agregan una vez)
+prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+        currentPage--;
+        createCardPost();
+    }
+});
+
+nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        createCardPost();
+    }
+});
+
+// Llamar a la función al inicio para cargar la primera página
+createCardPost();
