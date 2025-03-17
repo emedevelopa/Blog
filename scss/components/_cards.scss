@@ -10,6 +10,8 @@
     flex-direction: column;
     padding: 1rem;
     border: 1px solid v.$light;
+    height: 550px;
+    justify-content: space-between;
 }
 
 body.lightMode .card__article{

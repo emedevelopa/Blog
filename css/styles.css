@@ -399,6 +399,8 @@ body.lightMode .nav__toggle {
   flex-direction: column;
   padding: 1rem;
   border: 1px solid #E9EADD;
+  height: 550px;
+  justify-content: space-between;
 }
 
 body.lightMode .card__article {
