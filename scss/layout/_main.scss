@@ -54,21 +54,6 @@
         display: flex;
         margin-left: auto;
     }
-
-    .post__share{
-        display: flex;
-        margin-top:1rem;
-        justify-content: flex-end;
-    }
-
-    .share__icon{
-        fill:v.$light;
-    }
-
-    body.lightMode .share__icon{
-        fill:v.$dark;
-    }
-
     .text__category{
         background-color: v.$light;
         color:v.$dark;
@@ -81,6 +66,28 @@
         background-color: v.$dark;
         color: v.$light;
     }
+
+    .post__share{
+        display: flex;
+        margin-top:1rem;
+        justify-content: flex-end;
+    }
+
+    .share__btn{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;
+    }
+    
+    .share__icon{
+        width: 30px;
+        height: 30px;
+        fill:v.$light;
+    }
+    body.lightMode .share__icon svg{
+        fill:v.$dark;
+    }
+
 
     .post__content{
         max-width: 800px;

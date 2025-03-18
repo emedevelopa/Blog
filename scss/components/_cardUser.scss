@@ -68,7 +68,13 @@ body.lightMode .user__pic{
 }
 
 .reply__btn{
+    background-color: transparent;
+    border: none;
     fill:v.$light;
+}
+
+body.lightMode .reply__btn{
+    fill: v.$dark;
 }
 
 body.lightMode .comment__btn{
@@ -84,17 +90,6 @@ body.lightMode .comment__btn{
 
 body.lightMode .like__btn{
     fill:v.$dark;
-}
-
-.share__btn{
-    background-color: transparent;
-    border: none;
-    cursor:pointer;
-}
-
-.share__icon{
-    width: 30px;
-    height: 30px;
 }
 
 .separator__comment{

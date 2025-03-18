@@ -36,12 +36,12 @@ body.lightMode .main__chip:hover{
     color: v.$light;
 }
 
-.main__chip:focus, .main__chip[aria-pressed="true"]{
+.main__chip[aria-pressed="true"]{
     background-color: v.$light;
     color: v.$dark;
 }
 
-body.lightMode .main__chip:focus, .main__chip[aria-pressed="true"]{
+body.lightMode .main__chip[aria-pressed="true"]{
     background-color: v.$dark;
     color: v.$light;
 }

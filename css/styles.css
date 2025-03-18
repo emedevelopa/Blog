@@ -63,17 +63,6 @@ body {
   display: flex;
   margin-left: auto;
 }
-.main .post__share {
-  display: flex;
-  margin-top: 1rem;
-  justify-content: flex-end;
-}
-.main .share__icon {
-  fill: #E9EADD;
-}
-.main body.lightMode .share__icon {
-  fill: #232323;
-}
 .main .text__category {
   background-color: #E9EADD;
   color: #232323;
@@ -84,6 +73,24 @@ body {
 .main body.lightMode .text__category {
   background-color: #232323;
   color: #E9EADD;
+}
+.main .post__share {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+.main .share__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main .share__icon {
+  width: 30px;
+  height: 30px;
+  fill: #E9EADD;
+}
+.main body.lightMode .share__icon svg {
+  fill: #232323;
 }
 .main .post__content {
   max-width: 800px;
@@ -249,25 +256,6 @@ body.lightMode .social__icon {
   fill: #232323;
 }
 
-.madewith {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.madewith__text {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  opacity: 0.6;
-  gap: 0.3rem;
-}
-
-.madewith__icon {
-  width: 15px;
-}
-
 .separator {
   opacity: 0.3;
 }
@@ -280,9 +268,6 @@ body.lightMode .social__icon {
   .footer {
     margin: 0 4rem;
   }
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (min-width: 1440px) {
   .footer {
@@ -290,7 +275,12 @@ body.lightMode .social__icon {
     max-width: 70rem;
   }
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 2fr 2fr 1fr;
   }
 }
 @media (min-width: 2560px) {
@@ -399,7 +389,6 @@ body.lightMode .nav__toggle {
   flex-direction: column;
   padding: 1rem;
   border: 1px solid #E9EADD;
-  height: 550px;
   justify-content: space-between;
 }
 
@@ -435,12 +424,17 @@ body.lightMode .card__category {
 
 .card__text {
   padding: 0.7rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .card__paragraph {
   line-height: 1.5;
   font-size: 1rem;
   margin: 0.5rem 0 1.4rem;
+  min-height: 80px;
 }
 
 .card__link {
@@ -507,12 +501,12 @@ body.lightMode .main__chip:hover {
   color: #E9EADD;
 }
 
-.main__chip:focus, .main__chip[aria-pressed=true] {
+.main__chip[aria-pressed=true] {
   background-color: #E9EADD;
   color: #232323;
 }
 
-body.lightMode .main__chip:focus, .main__chip[aria-pressed=true] {
+body.lightMode .main__chip[aria-pressed=true] {
   background-color: #232323;
   color: #E9EADD;
 }
@@ -526,7 +520,7 @@ body.lightMode .main__chip:focus, .main__chip[aria-pressed=true] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 
 .pagination__arrow {
@@ -543,24 +537,6 @@ body.lightMode .pagination__arrow {
 .prev, .next {
   background-color: transparent;
   border: none;
-}
-
-.post__category {
-  font-family: "Inter", sans-serif;
-  padding: 0.4rem;
-  border-radius: 0.5rem;
-  background-color: #E9EADD;
-  border: none;
-  color: #232323;
-  cursor: pointer;
-  white-space: nowrap;
-  font-size: 0.9rem;
-  margin-right: auto;
-}
-
-body.lightMode .post__category {
-  background-color: #232323;
-  color: #E9EADD;
 }
 
 .comment__box {
@@ -681,7 +657,13 @@ body.lightMode .user__pic {
 }
 
 .reply__btn {
+  background-color: transparent;
+  border: none;
   fill: #E9EADD;
+}
+
+body.lightMode .reply__btn {
+  fill: #232323;
 }
 
 body.lightMode .comment__btn {
@@ -697,17 +679,6 @@ body.lightMode .comment__btn {
 
 body.lightMode .like__btn {
   fill: #232323;
-}
-
-.share__btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.share__icon {
-  width: 30px;
-  height: 30px;
 }
 
 .separator__comment {
