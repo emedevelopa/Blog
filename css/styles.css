@@ -70,7 +70,7 @@ body {
   border: none;
   border-radius: 0.5rem;
 }
-.main body.lightMode .text__category {
+.main body.lightMode .post__chip .text__category {
   background-color: #232323;
   color: #E9EADD;
 }
@@ -95,6 +95,9 @@ body {
 .main .post__content {
   max-width: 800px;
   margin: 3rem auto;
+}
+.main .post__bold {
+  font-weight: bold;
 }
 .main .paragraph,
 .main .paragraph2 {
@@ -650,35 +653,7 @@ body.lightMode .user__pic {
 
 .user__comment {
   margin: 1rem 0 0;
-}
-
-.comment__icons {
-  margin-top: 2rem;
-}
-
-.reply__btn {
-  background-color: transparent;
-  border: none;
-  fill: #E9EADD;
-}
-
-body.lightMode .reply__btn {
-  fill: #232323;
-}
-
-body.lightMode .comment__btn {
-  fill: #232323;
-}
-
-.like__btn {
-  fill: #E9EADD;
-  background-color: transparent;
-  border: none;
-  padding: 5px 12px;
-}
-
-body.lightMode .like__btn {
-  fill: #232323;
+  padding: 1rem;
 }
 
 .separator__comment {

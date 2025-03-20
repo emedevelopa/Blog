@@ -61,35 +61,7 @@ body.lightMode .user__pic{
 
 .user__comment{
     margin:1rem 0 0;
-}
-
-.comment__icons{
-    margin-top: 2rem;
-}
-
-.reply__btn{
-    background-color: transparent;
-    border: none;
-    fill:v.$light;
-}
-
-body.lightMode .reply__btn{
-    fill: v.$dark;
-}
-
-body.lightMode .comment__btn{
-    fill: v.$dark;
-}
-
-.like__btn{
-    fill:v.$light;
-    background-color: transparent;
-    border: none;
-    padding: 5px 12px;
-}
-
-body.lightMode .like__btn{
-    fill:v.$dark;
+    padding: 1rem;
 }
 
 .separator__comment{

@@ -54,6 +54,7 @@
         display: flex;
         margin-left: auto;
     }
+
     .text__category{
         background-color: v.$light;
         color:v.$dark;
@@ -62,7 +63,7 @@
         border-radius: .5rem;
     }
 
-    body.lightMode .text__category{
+    body.lightMode .post__chip .text__category{
         background-color: v.$dark;
         color: v.$light;
     }
@@ -92,6 +93,10 @@
     .post__content{
         max-width: 800px;
         margin: 3rem auto;
+    }
+
+    .post__bold{
+        font-weight: bold;
     }
 
     .paragraph,
